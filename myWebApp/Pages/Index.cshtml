@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "CT-0";
+}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>CT-0</title>
+</head>
+<body>
+    <h1>Welcome to CT-0</h1>
+    <h2>Taskforce Blue Falcon</h2>
+    <picture><img src="~/images/BF.png" alt="Blue Falcon" class="img-responsive" /></picture>
+    
+    
+        
+            <form method="post" action="">
+                Company Name:<br>
+                <input type="text" name="CompanyName" value=""><br>
+                Contact Name:<br>
+                <input type="text" name="ContactName" value=""><br><br>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        
+            <p>The time on the server is @DateTime.Now</p>
+</body>
+</html>
