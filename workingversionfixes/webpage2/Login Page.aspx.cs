@@ -11,7 +11,7 @@ namespace webpage2
     public partial class web : System.Web.UI.Page
     {
         
-        SqlConnection con = new SqlConnection("Data Source=ctzero-db-srv.database.windows.net;Initial Catalog=CTZERO-DB;User ID=troymateo;Password=##IntelSwag1994"
+        SqlConnection con = new SqlConnection("Data Source=ctzeronewdbsvr.database.windows.net;Initial Catalog=CTZERO-NEW-DB;User ID=ctzeroadmin;Password=CTzero1234"
 );
 
         protected void Page_Load(object sender, EventArgs e)
