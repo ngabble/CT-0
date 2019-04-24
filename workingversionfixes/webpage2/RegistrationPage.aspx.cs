@@ -18,7 +18,7 @@ namespace webpage2
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=ctzero-db-srv.database.windows.net;Initial Catalog=CTZERO-DB;User ID=troymateo;Password=##IntelSwag1994");
+            SqlConnection con = new SqlConnection("Data Source = ctzeronewdbsvr.database.windows.net; Initial Catalog = CTZERO - NEW - DB; User ID = ctzeroadmin; Password = CTzero1234");
 
             try
             {
