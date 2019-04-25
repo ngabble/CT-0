@@ -34,6 +34,8 @@ foreach ($User in $ADUsers)
             -Department $Department `
             -Path $OU `
             -AccountPassword (convertto-securestring $Password -AsPlainText -Force)
-
        }
+       #Validate AD user properties.
+            Get-ADUser -F {SamAccountName -eq $Username} -Properties CanonicalName, Enabled, GivenName, Surname, Name, UserPrincipalName, samAccountName, whenCreated, PasswordLastSet  | Select CanonicalName, Enabled, GivenName, Surname, Name, UserPrincipalName, samAccountName, whenCreated, PasswordLastSet
+       
 }
